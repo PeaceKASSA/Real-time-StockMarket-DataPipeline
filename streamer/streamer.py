@@ -5,7 +5,7 @@ import boto3
 from kafka import KafkaConsumer
 
 
-#MinIO S3bucket Setup
+#MinIO S3bucket Setup(I left my default credentials)
 bucket_name = "bronze-transactions"
 
 s3 = boto3.client(
@@ -29,7 +29,7 @@ def ensure_bucket():
 def create_consumer():
     return KafkaConsumer(
         "stock-quotes",
-        bootstrap_servers=["host.docker.internal:29092"],
+        bootstrap_servers=["localhost:29092"],
         auto_offset_reset="earliest",
         enable_auto_commit=True,
         group_id="bronze-consumer1",
