@@ -18,7 +18,8 @@ This project demonstrates the design and implementation of a **real-time stock m
 - **Apache Kafka** → Live Market Data Ingestion/Streaming
 - **Apache Airflow** → Workflow Orchestration  
 - **DBT** → SQL-based Transformations  
-- **Python** → API-driven Data Ingestion 
+- **Python** → API-driven Data Ingestion
+- **SQL** → Data transformation in the Medallion Layers 
 - **Snowflake** → Cloud Data Warehouse 
 - **Docker** → Containerization  
 
